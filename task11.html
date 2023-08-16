@@ -7,7 +7,20 @@
 </head>
 <body>
     <script>
-        var num=0;
+        
+        for(var i=1;i<=10;i=i){
+            var num=+prompt('enter num');
+            if(num>10){
+                console.log('yes');
+            }
+            else if(num<10){
+                console.log('no');
+                i++
+            }
+            else{
+                console.log('equal');
+            }
+        }
         
     </script>
 </body>
