@@ -28,8 +28,7 @@
             {
                 console.log('the num is smallest');
             }
-        var currentTimeSttart = getCurrentTime();
-        console.log(`Current time is: ${currentTimeSttart}`);
+        var startTime = new Date();
         var i=1;
         while(number!=user)
         {    
@@ -44,9 +43,44 @@
             }
             i++
         }
-        var currentTimeFinish = getCurrentTime();
+        var endTime = new Date();
+        var timeDifference = endTime - startTime;
+        var seconds = Math.floor(timeDifference / 1000);
         console.log("YOUR NUMBAR GUESS"+i);
-        console.log('you played from: '+currentTimeSttart +" to: "+currentTimeFinish);
+        console.log('you played: '+seconds+ ' seconds');
+        
+    // let secretNumber;
+    // let startTime;
+    // let endTime;
+
+    // function startGame() {
+    //     // Generate a random secret number between 1 and 100
+    //     secretNumber = Math.floor(Math.random() * 100) + 1;
+
+    //     // Record the start time
+    //     startTime = new Date();
+        
+    //     // Start the game logic
+    //     // For example, ask the user for input and process their guesses
+    //     }
+
+    // function endGame() {
+    //     // Record the end time
+    //     endTime = new Date();
+        
+    //     // Calculate the time difference in milliseconds
+    //     const timeDifference = endTime - startTime;
+
+    //     // Convert the time difference to seconds
+    //     const seconds = Math.floor(timeDifference / 1000);
+
+    //     console.log(`Congratulations! You guessed the number in ${seconds} seconds.`);
+    //     }
+
+    // // Call startGame() to begin the game
+    // startGame();
+
+        
     </script>
 </body>
 </html>
