@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function getCurrentTime() {
+        var now = new Date();
+        var hours = now.getHours();
+        var minutes = now.getMinutes();
+        var seconds = now.getSeconds();
+        return `${hours}:${minutes}:${seconds}`;
+        }
+
+        
+
+        var number = Math.floor(Math.random()*100)
+        console.log(number);
+        var user=+prompt('enter');
+        if(user>number)
+            {
+                console.log('the num is bigger');
+            }
+            else if(user<number) 
+            {
+                console.log('the num is smallest');
+            }
+        var currentTimeSttart = getCurrentTime();
+        console.log(`Current time is: ${currentTimeSttart}`);
+        var i=1;
+        while(number!=user)
+        {    
+            var user=+prompt('enter');
+            if(user>number)
+            {
+                console.log('the num is bigger');
+            }
+            else if(user<number) 
+            {
+                console.log('the num is smallest');
+            }
+            i++
+        }
+        var currentTimeFinish = getCurrentTime();
+        console.log("YOUR NUMBAR GUESS"+i);
+        console.log('you played from: '+currentTimeSttart +" to: "+currentTimeFinish);
+    </script>
+</body>
+</html>
